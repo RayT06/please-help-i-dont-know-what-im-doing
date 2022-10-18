@@ -7,8 +7,7 @@ class Program {
      //ceate array for monhs of the year
     string[] months = new string [12]
     {"Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"};
-
-    //initialise prng with a time dependent default seed value
+  
     Random rnd = new Random();
 
     //will create a number betwwen 1 and 12
@@ -19,6 +18,8 @@ class Program {
     RangeTest();
     RoundTest();
     TruncateTest();
+    GetLengthOfString("Rayhan Tanim");
+    GetCharOfString("Rayhan Tanim", 5);
   }
 
 public static void RangeTest() {
@@ -52,5 +53,24 @@ public static void RoundTest() {
    decimalNumber = -32.9012m;
    Console.WriteLine(Math.Truncate(decimalNumber));
   } 
+public static void GetLengthOfString(string str) {
+  int length;
+
+  length = str.Length;
+  Console.WriteLine("{0} is {1} characters long", str, length);
+}
+
+
+
+  public static void GetCharOfString(string str, int i){
+    char singleLetter;
+
+    singleLetter = str[i];
+    Console.WriteLine("Character {0} of {1} is {2}", i, str, singleLetter);
+  }
+  string month = "January";
+  int length
+    length = month.Length;
+  Console.WriteLine("0 is {1} characters long", month, length);
 }
 
